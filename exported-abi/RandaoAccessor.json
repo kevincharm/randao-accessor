@@ -1,0 +1,96 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "axiomV1_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "axiomV1",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "blockHeaderRLP",
+        "type": "bytes"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "blockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "claimedBlockHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "prevHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "numFinal",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bytes32[10]",
+            "name": "merkleProof",
+            "type": "bytes32[10]"
+          }
+        ],
+        "internalType": "struct IAxiomV1Verifier.BlockHashWitness",
+        "name": "witness",
+        "type": "tuple"
+      }
+    ],
+    "name": "verifyHistorical",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "blockHeaderRLP",
+        "type": "bytes"
+      }
+    ],
+    "name": "verifyRecent",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
